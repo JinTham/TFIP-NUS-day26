@@ -1,24 +1,26 @@
 package tfip.paf.day26.Config;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.mongodb.core.MongoTemplate;
+//// for mongo testing at localhost
 
-import com.mongodb.client.MongoClient;
-import com.mongodb.client.MongoClients;
+// import org.springframework.beans.factory.annotation.Value;
+// import org.springframework.context.annotation.Bean;
+// import org.springframework.context.annotation.Configuration;
+// import org.springframework.data.mongodb.core.MongoTemplate;
 
-@Configuration
-public class AppConfig {
+// import com.mongodb.client.MongoClient;
+// import com.mongodb.client.MongoClients;
 
-    @Value("${mongo.url}")
-    private String mongoUrl;
+// @Configuration
+// public class AppConfig {
 
-    @Bean
-    public MongoTemplate createMongoTemplate() {
-        // Create a MongoClient
-        MongoClient client = MongoClients.create(mongoUrl);
-        return new MongoTemplate(client, "shows");
-    }
+//     @Value("${mongo.url}")
+//     private String mongoUrl;
+
+//     @Bean
+//     public MongoTemplate createMongoTemplate() {
+//         // Create a MongoClient
+//         MongoClient client = MongoClients.create(mongoUrl);
+//         return new MongoTemplate(client, "shows");
+//     }
     
-}
+// }

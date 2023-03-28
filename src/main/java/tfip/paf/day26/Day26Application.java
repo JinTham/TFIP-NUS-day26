@@ -25,10 +25,11 @@ public class Day26Application implements CommandLineRunner {
 
 		//List<Document> results = showsRepo.findTvShowByName("Game of Thrones");
 		//List<Document> results = showsRepo.findShowtimeLessThan(30);
-		List<Document> results = showsRepo.findMoviesByStatus("Ended");
-		for (Document d: results) {
-			System.out.printf(">> %s\n", d.toJson());
-		}
+		// List<Document> results = showsRepo.findMoviesByStatus("Ended");
+		// for (Document d: results) {
+		// 	System.out.printf(">> %s\n", d.toJson());
+		// }
+		System.out.printf("");
 
 	}
 }
